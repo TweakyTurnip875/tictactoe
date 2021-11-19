@@ -1,0 +1,55 @@
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .board-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .board-grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1px;
+      width: 400px;
+      height: 300px;
+      
+      div {
+        position: relative;
+        box-shadow: 0 0 0 1px black;
+          button {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 2em;
+            cursor: pointer;
+          }
+        }
+    }
+}
+}
+.toggle {
+    height:50px;
+    background-color: $grey;
+    color: white;
+    border-radius: 0px 0px 20px 0px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.restart {
+  button {
+    width: 100%;
+    height:50px;
+    margin-top: 50px;
+    background-color: $blue;
+    color: white;
+    font-size:1.2em;
+    border:none;
+    outline: none;
+    cursor: pointer;
+  }
+}
